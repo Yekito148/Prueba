@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CV-Yesid Sanchez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .encabezado {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      overflow: hidden;
+      transition: height 0.2s linear;
+    }
+
+    #foto_perfil {
+      background-color: white;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    #nombre {
+      color: white;
+      font-size: 2rem;
+      margin-top: 15px;
+      white-space: nowrap;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #66fcf1 !important;
+    }
+
+    .contenido {
+      margin-top: 100vh;
+      padding: 20px;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 60px 20px;
+      scroll-margin-top: 70px;
+    }
+
+    #sobre-mi { background-color: #0b0c10; }
+    #experiencia { background-color: #1f2833; }
+    #formacion { background-color: #0b0c10; }
+    #certificaciones { background-color: #1f2833; }
+    #contacto { background-color: #0b0c10; }
+  </style>
 </head>
 <body>
-  <h1>Prueba...</h1>
+
+  <header class="encabezado" id="header">
+    <img src="work/img/mi_foto.png" alt="Foto Yesid Sanchez" id="foto_perfil">
+    <h1 id="nombre">Faber Yesid Sanchez Reyes</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="top: 50%;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificaciones">Certificaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contáctame</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Texto de presentación personal...</p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia laboral</h2>
+      <p>Detalles de experiencia...</p>
+    </section>
+
+    <section id="formacion">
+      <h2>Formación académica</h2>
+      <p>Universidad, cursos...</p>
+    </section>
+
+    <section id="certificaciones">
+      <h2>Certificaciones</h2>
+      <p>Listado de certificaciones...</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctame</h2>
+      <p>Correo, redes sociales...</p>
+    </section>
+  </main>
+
+  <script src="work/stile/scritp.js"></script>
+
 </body>
 </html>
