@@ -1,3 +1,4 @@
+// efecto encabezado movimiento
 const header = document.getElementById("header");
 const foto = document.getElementById("foto_perfil");
 const nombre = document.getElementById("nombre");
@@ -50,6 +51,8 @@ window.addEventListener("scroll", () => {
         navbar.style.marginLeft = "0";
     }
 });
+
+// Efecto contraccion hamburguesa
 document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
     link.addEventListener('click', () =>{
         const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -57,5 +60,21 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
         if(bsCollapse){
             bsCollapse.hide();
         }
+    });
+});
+
+// Efecto contraccion datails y sumary
+document.addEventListener("DOMContentLoaded", () => {
+    const detalles = document.querySelectorAll("details");
+    detalles.forEach((det) => {
+        det.addEventListener("toggle", function() {
+            if(this.hasAttribute("open")) {
+                detalles.forEach((other) => {
+                    if (other !== this) {
+                        other.removeAttribute("open");
+                    }
+                });
+            }
+        });
     });
 });
