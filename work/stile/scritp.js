@@ -104,36 +104,36 @@ const funciones = {
         empresa: "OSNET",
         cargo: "Technical Support",
         fechas: "Mayo 2024 - Actualmente",
-        descripcion: "Soporte técnico a clientes residenciales y comerciales.",
-        logros: "Implementación de scripts de automatización y optimización de red.",
-        fotos: ["work/img/osnet1.jpg","work/img/osnet2.jpg"]
+        descripcion: "Responsable de la atención, resolución y documentación de incidencias para servicios residenciales y comerciales en Puerto Rico, gestionando redes y configuraciones avanzadas de equipos, IPs, enrutamiento, firmware, VLANs y VPNs. Destacado por una rápida curva de aprendizaje, lo que me permitió asumir soporte y migraciones completas de infraestructura Cambium y Ubiquiti a PPPoE sobre Juniper, realizando configuraciones desde cero. Además, adquirí experiencia en telefonía IP con equipos Grandstream y plataformas 3CX, Mirtapbx y SIP.AI, desarrollando IVRs, sistemas de voicemail personalizados y acceso remoto telefónico mediante JustDial, optimizando la gestión y el control de llamadas. ",
+        logros: "LOGROS: Desarrolle en Python un sistema automatizado que redujo significativamente los tiempos de validación, configuración y resolución de solicitudes, analizando en segundos el comportamiento de equipos y redes. Cuando no podía resolver de forma automática, integraba ChatGPT para generar recomendaciones precisas al técnico, optimizando la atención al cliente. ",
+        fotos: ["work/img/osnet2.png", "work/img/osnet3.png", "work/img/osnet4.png"]
     },
     exp2:{
         logo: "work/img/ar.png",
         empresa: "Hotel Hilton DoubleTree",
-        cargo: "Soporte IT",
+        cargo: "Operario de mantenimiento",
         fechas: "Ene 2022 - Abr 2024",
-        descripcion: "Gestión de infraestructura tecnológica y soporte al personal.",
-        logros: "Mejora del sistema de reservas y conectividad en red.",
-        fotos: ["work/img/hotel1.jpg","work/img/hotel2.jpg"]
+        descripcion: "Responsable de la ejecución de mantenimiento preventivo y correctivo en redes eléctricas, motores, calderas, sistemas de refrigeración, aire acondicionado, ascensores, equipos de cocina, control de acceso. También brindé soporte al área tecnológica en redes e internet. Gracias a mi adaptabilidad y rápida adquisición de conocimientos, asumí temporalmente la coordinación del área de mantenimiento, liderando la gestión de hojas de vida de equipos, seguimiento de tareas y supervisión de contratistas.",        
+        logros: "LOGROS: Implementé soluciones automatizadas con Visual Basic y Python que optimizaron la gestión de tareas pendientes, la asignación automática vía WhatsApp y la trazabilidad de reparaciones. Desarrollé paneles en Power BI para visualizar el desempeño del área y presentarlo a la gerencia, facilitando una toma de decisiones más ágil y basada en datos.",
+        fotos: ["work/img/hotelauto.png","work/img/hotel3.png", "work/img/hotel2.png"]
     },
     exp3:{
         logo: "work/img/deploy.jpg",
         empresa: "Deploy Technologies",
-        cargo: "Soporte Técnico",
-        fechas: "Jul 2020 - Dic 2021",
-        descripcion: "Soporte en proyectos de telecomunicaciones y redes.",
-        logros: "Implementación de VLANs y configuración de VPNs seguras.",
-        fotos: ["work/img/deploy1.jpg","work/img/deploy2.jpg"]
+        cargo: "Técnico electrónico",
+        fechas: "Ene 2019 - Dic 2021",
+        descripcion: "Inicié como practicante técnico y, gracias a mi responsabilidad, compromiso y autonomía, ascendí a un cargo fijo. Realicé mantenimiento preventivo y correctivo de sistemas electrónicos en sedes como Centro Comercial Tintal Plaza y Centro Empresarial Northpoint. Instalé y programé sistemas de seguridad, alarmas contra incendio y asalto, control de acceso y radiocomunicación. Ejecuté diagnósticos, reparación de tarjetas de control y configuración de paneles Andover Continuum para redes automatizadas. Implementé herramientas en Excel para optimizar la gestión del control de acceso y la administración de sistemas domóticos, mejorando la trazabilidad y eficiencia operativa. Además, reparé tarjetas y componentes electrónicos de diversos equipos, ampliando mi experiencia en diagnóstico y solución de fallas en hardware.",
+        logros: "LOGROS:  Durante la pandemia, propuse y lideré un proyecto que permitió a la empresa adaptarse a las exigencias sanitarias y mantenerse operativa. Diseñé y desarrollé desde cero, tanto en hardware como en software, un dispositivo de medición de temperatura sin contacto que, en caso de fiebre, activaba alertas para protocolos de desinfección y aislamiento; y en caso contrario, habilitaba el acceso a una cabina de aspersión también diseñada por mí. El sistema almacenaba la información en una base de datos en Excel con registro de ingresos, control de casos y generación de gráficos, cumpliendo con los lineamientos del Ministerio de Salud frente al COVID-19.",
+        fotos: ["work/img/deploy2.png","work/img/deploy3.png"]
     },
     exp4:{
         logo: "work/img/dandan.jpg",
         empresa: "Fiestas DanDan",
         cargo: "Técnico de Sonido e Iluminación",
         fechas: "Ene 2018 - Jun 2020",
-        descripcion: "Montaje y soporte de equipos electrónicos y de sonido.",
-        logros: "Automatización de sistemas de luces y control remoto.",
-        fotos: ["work/img/dandan1.jpg","work/img/dandan2.jpg"]
+        descripcion: "Durante mi permanencia en la empresa, ocupe diversos cargos que me permitieron crecer profesionalmente, iniciando como Auxiliar de Publicidad hasta llegar a roles de liderazgo y administración. Como Coordinador y posteriormente Auxiliar Administrativo, lideré equipos de trabajo en eventos sociales, infantiles y corporativos, gestionando la asignación de tareas, seguimiento de desempeño y organización de logística dentro de la empresa. Implementé herramientas ofimáticas automatizadas mediante macros para optimizar la gestión de inventarios, control de ingresos y egresos, pagos de nómina y escalafón del personal, mejorando significativamente la eficiencia en la toma de decisiones y la consulta de datos. Además, asumí la capacitación de nuevos integrantes, fortaleciendo mis habilidades en liderazgo, comunicación, manejo de grupos y adaptación a diferentes entornos laborales.",
+        logros: "LOGROS: Durante mi etapa como auxiliar administrativo, la implementación de macros y flujos de trabajo permitió un desarrollo más eficiente en el área de despacho, logrando una base de datos más limpia y una gestión de eventos y asignación de personal más dinámica. Por otro lado, después de mi salida continué colaborando, aportando mis conocimientos en el desarrollo de la página web de la organización.",
+        fotos: ["work/img/fiestas2.png","work/img/fiestas3.png"]
     }
 };
 
@@ -146,7 +146,6 @@ document.querySelectorAll(".swiper-slide").forEach(slide => {
 
         historias.classList.add("hidden");
         setTimeout(() => {
-            historias.style.display = "none";
             detalle.classList.add("active");
 
             document.getElementById("detalle-logo").src = exp.logo;
@@ -164,6 +163,7 @@ document.querySelectorAll(".swiper-slide").forEach(slide => {
                 img.alt = "foto experiencia";
                 collage.appendChild(img);
             });
+            swiper.autoplay.stop();
         }, 400);
     });
 });
@@ -174,10 +174,9 @@ document.getElementById("volver-historias").addEventListener("click",() => {
 
     detalle.classList.remove("active");
     setTimeout(() => {
-        detalle.style.display = "none";
-        historias.style.display = "block";
-        setTimeout(() => {
-            historias.classList.remove("hidden");
-        }, 50);
+
+        historias.classList.remove("hidden");
+
+        swiper.autoplay.start();
     }, 400);
 });

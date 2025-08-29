@@ -154,7 +154,9 @@ details ul {
   margin-top: 10px;
   padding-left: 20px;
 }
-#experiencia { background-color: #1f2833; }
+
+#experiencia { background-color: #1f2833; min-height: 90vh;}
+
 .logo-historia {
     width: 200px;
     height: 200px;
@@ -230,7 +232,7 @@ details ul {
 .historia-body img {
     width: 400px;
     height: 600px;
-    object-fit: cover;
+    object-fit: auto;
 }
 .historia-footer {
     text-align: center;
@@ -252,25 +254,40 @@ details ul {
     margin: 0;
 }
 .detalle-experiencia{
-    display: none;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
     padding: 20px;
     background: #1f2833;
     border-radius: 12px;
     margin-top: 20px;
     z-index: 500;
+    visibility: hidden;
+    pointer-events: none;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.4s ease;
+    overflow-y: auto;
 }
 .detalle-experiencia.active {
-    display: block;
+    visibility: visible;
     opacity: 1;
+    pointer-events: auto;
     transform: translateY(0);
 }
 .detalle-header {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+.detalle-header div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .logo-grande {
     width: 100px;
@@ -292,10 +309,63 @@ details ul {
 
 #historias-container{
     opacity: 1;
-    transition: opacity 0.4s ease-in-out;
+    visibility: visible;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 #historias-container.hidden{
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
+}
+
+.relative-container{
+  position:relative;
+  min-height: 500px;
+  overflow:visible;
+}
+
+.historias-container, .detalle-experiencia{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+}
+
+.historias-container{
+  opacity: 1;
+  visibility: visible;
+}
+
+.historias-container.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#volver-historias {
+  background: linear-gradient(135deg, #00aaff, #0077ff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#volver-historias:hover {
+  background: linear-gradient(135deg, #0077ff, #0056b3);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+}
+
+#volver-historias:active {
+  transform: scale(0.95);
 }
