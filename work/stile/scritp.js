@@ -180,3 +180,23 @@ document.getElementById("volver-historias").addEventListener("click",() => {
         swiper.autoplay.start();
     }, 400);
 });
+
+//Efecto Formacion complementaria
+const burbujas = document.querySelectorAll("burbuja");
+const tootip = document.getElementById("tooltip");
+
+burbujas.forEach(burbujas => {
+    burbuja.addEventListener("mouseenter", e=> {
+        tootip.innerHTML = burbuja.getAttribute("data-info");
+        tootip.style.display ="block";
+        tootip.style.top = (e.pageY - 40) + "px";
+        tootip.style.left = (e.pageX + 20) + "px";
+    });
+    burbuja.addEventListener("mousemove", e => {
+        tootip.style.top = (e.pageY - 40) + "px";
+        tootip.style.left = (e.pageX + 20) + "px";
+    });
+    burbuja.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+    });
+});
