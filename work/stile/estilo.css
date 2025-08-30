@@ -81,6 +81,55 @@ html {
   #sobre-mi .info, #sobre-mi .acordeones {
     width: 100%;
   }
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-container::before {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    margin: 40px 0;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    padding-left: 80px;
+  }
+
+  .timeline-dot {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .timeline-content {
+    display: none;
+    background: #3b3f4a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .timeline-item.active .timeline-content {
+    display: block;
+  }
+  .timeline-item.active .timeline-dot {
+    transform: scale(1.3);
+    background: #0056b3;
+  }
 }
 #info {
   display: flex;

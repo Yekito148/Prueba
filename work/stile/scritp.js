@@ -180,7 +180,23 @@ document.getElementById("volver-historias").addEventListener("click",() => {
         swiper.autoplay.start();
     }, 400);
 });
+//Efecto movil formacion academica
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".timeline-item");
 
+  items.forEach(item => {
+    const dot = item.querySelector(".timeline-dot");
+
+    dot.addEventListener("click", () => {
+      if (item.classList.contains("active")) {
+        item.classList.remove("active");
+      } else {
+        items.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+      }
+    });
+  });
+});
 /*Efecto Formacion complementaria
 const burbujas = document.querySelectorAll("burbuja");
 const tootip = document.getElementById("tooltip");
