@@ -181,7 +181,7 @@ document.getElementById("volver-historias").addEventListener("click",() => {
     }, 400);
 });
 
-//Efecto Formacion complementaria
+/*Efecto Formacion complementaria
 const burbujas = document.querySelectorAll("burbuja");
 const tootip = document.getElementById("tooltip");
 
@@ -199,4 +199,4 @@ burbujas.forEach(burbujas => {
     burbuja.addEventListener("mouseleave", () => {
         tooltip.style.display = "none";
     });
-});
+});*/
