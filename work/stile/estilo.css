@@ -53,7 +53,7 @@ section {
   min-height: 50vh;
   padding: 60px 20px;
 }
-#formacion { background-color: #2c2f3a; }
+
 #certificaciones { background-color: #1f2833; }
 #contacto { background-color: #2c2f3a; }
 html {
@@ -368,4 +368,10 @@ details ul {
 
 #volver-historias:active {
   transform: scale(0.95);
+}
+
+#formacion { background-color: #2c2f3a; }
+
+.btn-group {
+  margin-left: 40%;
 }
