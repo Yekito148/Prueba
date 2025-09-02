@@ -197,22 +197,39 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-/*Efecto Formacion complementaria
-const burbujas = document.querySelectorAll("burbuja");
-const tootip = document.getElementById("tooltip");
 
-burbujas.forEach(burbujas => {
-    burbuja.addEventListener("mouseenter", e=> {
-        tootip.innerHTML = burbuja.getAttribute("data-info");
-        tootip.style.display ="block";
-        tootip.style.top = (e.pageY - 40) + "px";
-        tootip.style.left = (e.pageX + 20) + "px";
-    });
-    burbuja.addEventListener("mousemove", e => {
-        tootip.style.top = (e.pageY - 40) + "px";
-        tootip.style.left = (e.pageX + 20) + "px";
-    });
-    burbuja.addEventListener("mouseleave", () => {
-        tooltip.style.display = "none";
-    });
-});*/
+//Efecto complementaria
+var swipercertificaciones = new Swiper(".mySwiper", {
+   slidesPerView: 3,
+   spaceBetween: 20,
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+   breakpoints: {
+     0: { slidesPerView: 1 },
+     768: { slidesPerView: 2 },
+     1024: { slidesPerView: 3 }
+   }
+});
+//
+const bubbleBtn = document.getElementById("bubble-btn");
+const bubbleMenu = document.getElementById("bubble-menu");
+const floatingBubble = document.getElementById("floating-bubble");
+const contactSection = document.getElementById("contactame");
+
+bubbleBtn.addEventListener("click", () => {
+  bubbleMenu.classList.toggle("hidden");
+});
+
+window.addEventListener("scroll", () => {
+  const sectionTop = contactSection.offsetTop;
+  const sectionBottom = sectionTop + contactSection.offsetHeight;
+  const scrollY = window.scrollY + window.innerHeight;
+
+  if (window.scrollY + 100 >= sectionTop && window.scrollY <= sectionBottom) {
+    floatingBubble.classList.add("hide");
+  } else {
+    floatingBubble.classList.remove("hide");
+  }
+});
